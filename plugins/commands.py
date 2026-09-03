@@ -119,6 +119,7 @@ async def start(client, message):
                   [
                     InlineKeyboardButton('👉 Search movie/series Here 👈', url='https://t.me/+JdRUqgm9Xvk3MWJl' )
                    ]]
+            reply_markup = InlineKeyboardMarkup(buttons)
             current_time = datetime.now(pytz.timezone(TIMEZONE))
             curr_time = current_time.hour        
             if curr_time < 12:
